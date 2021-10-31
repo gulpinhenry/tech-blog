@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Sample Post 1",
+      "content": "hello world!",
+      "user_id": "1"
+    },
+    {
+        "title": "Sample Post 2",
+        "content": "help this is very hard",
+        "user_id": "1"
+      },
+      {
+        "title": "Sample Post 3",
+        "content": "Im lost ngl",
+        "user_id": "1"
+      },
+      {
+        "title": "Sample Post 4",
+        "content": "save me",
+        "user_id": "3"
+      }
+  ]
+  
