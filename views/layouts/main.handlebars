@@ -7,35 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
     {{!-- TODO link css --}}
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+    <div id="title-bar"> 
+        <h1>Kam's Technology Blog</h1>
+    </div>
     {{!-- NAV BAR --}}
     <nav>
-        <ul>
-            <li>
-                <p><a href="/">Home</a></p>
-            </li>
-            {{#if loggedIn}}
-                <li>
-                    <p><a href="/dashboard">Dashboard</a></p>
-                </li>
-                <li>
-                    <p><button id="logout-btn">Logout</button> </p>
-                </li>
-            {{else}}
-                <li>
-                    <p><a href="/login">Dashboard</a></p>
-                </li>
-                <li>
-                    <p><a href="/login">Login</a></p>
-                </li>
-            {{/if}}
-        </ul>
+        <p><a href="/">Home</a></p>
+        {{#if loggedIn}}
+            <p><a href="/dashboard">Dashboard</a></p>
+            <p><button id="logout-btn">Logout</button> </p>
+        {{else}}
+            <p><a href="/login">Dashboard</a></p>
+            <p><a href="/login">Login</a></p>
+        {{/if}}
+    <p id="scuffed-filler"></p>
     </nav>
 
     {{{body}}}
     {{!-- TODO link js --}}
+    <script src="js/script.js"></script>
 </body>
 
 </html>

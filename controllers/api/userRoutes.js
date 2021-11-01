@@ -91,7 +91,6 @@ router.post('/', async (req, res) => {
 
 router.post("/login", async (req, res) => {
     try{
-        console.log("lol")
         const userData = await User.findOne({
             where: {
                 username: req.body.username,
@@ -110,6 +109,7 @@ router.post("/login", async (req, res) => {
             res.status(400).json({ message: "Incorrect Password!" });
             return;
         }
+        
         req.session.save(() => {
             req.session.user_id = userData.id;
             req.session.username = userData.username;
@@ -120,7 +120,7 @@ router.post("/login", async (req, res) => {
             });
         });
     } catch(err){
-        res.status(500).json(err);
+        res.status(500).json(err)
     }
 });
 

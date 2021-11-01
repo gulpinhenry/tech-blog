@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+button {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.login-form {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h3, h4, p, button, label, input {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+nav {
+    display: flex;
+}
+
+nav p {
+    padding: 15px;
+    border: 1px solid black;
+    background-image: linear-gradient(gray, black);
+    font-weight: bold;
+}
+
+#scuffed-filler {
+    width: 100%;
+}
+
+nav a {
+    color: white;
+}
+
+.post-container {
+    text-decoration: none;
+    width: 100%;
+}
+
+.post-children {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#title-bar {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 400px;
+}
+
+#title-bar h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.login-form {
+    background-image: linear-gradient(to bottom right, white, lightgray);
+    width: 300px;
+    padding: 30px;
+}
+
+.login-form div {
+    display: flex;
+    margin: 30px;
+}
+
+.login-form div input {
+    margin-left: 10px;
+}

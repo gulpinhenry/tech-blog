@@ -1,9 +1,9 @@
-<a href="/post/{{id}}">
-    <div>
-        <h3>{{title}} </h3>
-        <h4>Posted by {{user.username}} on {{format_date created_at}}</h4>
-        <div>
-            <p>{{content}}</p>
+<a href="/post/{{id}}" class="post-container">
+    <div class="post-children">
+        <div class="post-title">
+            <h3>{{title}} </h3>
+            <h4 class="posted-by">Posted by {{user.username}} on {{format_date created_at}}</h4>
         </div>
+        <p>{{content}}</p>
     </div>
 </a>
