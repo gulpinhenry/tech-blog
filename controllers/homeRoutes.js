@@ -19,10 +19,8 @@ router.get('/', async (req, res) => {
                 },
             ],
         });
-        // serialize
         const posts = postData.map((post) => post.get({ plain: true }));
         console.log(posts);
-        // Pass serialized data and session flag into template
         res.render('homepage', {
             posts,
             logged_in: req.session.logged_in
@@ -83,4 +81,8 @@ router.get("/login", (req, res) => {
     console.log("Is logged in?", req.session.loggedIn);
     res.render("login", { loggedIn: req.session.loggedIn });
 });
+
+router.get("/dashboard")
+
+//TODO, post, edit/:id
 module.exports = router;
