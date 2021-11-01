@@ -1,0 +1,29 @@
+{{!-- import css stuff --}}
+<div class="card single-post-padding">
+    <h1 id="post-title" class="post-header">{{curPost.title}} </h1>
+    <h4>Posted by {{curPost.user.username}} on {{format_date curPost.created_at}}</h4>
+    <div class="container">
+        <p id="post-body">{{curPost.content}}</p>
+    </div>
+    {{#if currentUser}}
+    <button id="edit-btn">Edit</button>
+    <button id="delete-btn">Delete</button>
+    {{/if}}
+</div>
+
+<div>
+    <form id="comment-form ">
+        <label for="comment-text">Leave A Comment</label>
+        <input type="textarea" id="comment-text">
+        <button id="post-comment-btn">Post!</button>
+    </form>
+</div>
+
+{{#each curPost.comments as |aComment|}}
+{{> comment aComment}}
+{{/each}}
+{{!-- link single post js --}}
+{{#if currentUser}}
+<p>current user</p>
+{{!-- TODO link edit and delete js scripts --}}
+{{/if}}

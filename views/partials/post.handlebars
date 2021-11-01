@@ -1,9 +1,9 @@
-<a href="/viewpost/{{id}}">
+<a href="/post/{{id}}">
     <div class="card">
         <h3 class="post-header">{{title}} </h3>
-        <h4>Posted by {{user.username}} on 12/1/2020</h4>
+        <h4>Posted by {{user.username}} on {{format_date created_at}}</h4>
         <div class="container">
-            <p class="post-text">{{body}}</p>
+            <p class="post-text">{{content}}</p>
         </div>
     </div>
 </a>

@@ -1,3 +1,8 @@
-{{#each posts as |postEl| }}
-{{> post postEl}}
+{{#each posts as |post|}}
+
+{{> post post }}
+</div>
+
+{{else}}
+<p>there are currently no posts</p>
 {{/each}}
