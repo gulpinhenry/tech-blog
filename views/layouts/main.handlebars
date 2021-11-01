@@ -19,10 +19,11 @@
         <p><a href="/">Home</a></p>
         {{#if loggedIn}}
             <p><a href="/dashboard">Dashboard</a></p>
-            <p><button id="logout-btn">Logout</button> </p>
+            <p><button id="logout-btn">Logout</button></p>
         {{else}}
             <p><a href="/login">Dashboard</a></p>
             <p><a href="/login">Login</a></p>
+            <p style="display: none"><button id="logout-btn">Logout</button></p>
         {{/if}}
     <p id="scuffed-filler"></p>
     </nav>
