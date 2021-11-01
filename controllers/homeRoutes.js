@@ -87,5 +87,11 @@ router.get("/dashboard")
 router.get("/post", (req, res) => {
     res.render("create-post", { loggedIn: req.session.loggedIn });
 });
-//TODO, post, edit/:id
+router.get("/edit/:id", (req, res) => {
+    res.render("edit-post", {
+      loggedIn: req.session.loggedIn,
+      post_id: req.params.id,
+    });
+  });
+
 module.exports = router;
