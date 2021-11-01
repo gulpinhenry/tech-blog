@@ -84,5 +84,8 @@ router.get("/login", (req, res) => {
 
 router.get("/dashboard")
 
+router.get("/post", (req, res) => {
+    res.render("create-post", { loggedIn: req.session.loggedIn });
+});
 //TODO, post, edit/:id
 module.exports = router;
