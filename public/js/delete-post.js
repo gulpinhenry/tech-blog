@@ -13,7 +13,7 @@ async function deleteFormHandler(event) {
     if (response.ok) {
       document.location.replace(`/`);
     } else {
-      alert('Failed to delete article');
+      alert('Failed to delete post');
     }
   }
   document.querySelector('#delete-btn').addEventListener('click', deleteFormHandler);

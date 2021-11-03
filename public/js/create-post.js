@@ -19,7 +19,7 @@ async function handleForm(event) {
   if (response.ok) {
     document.location.replace("/");
   } else {
-    alert("Failed to add article");
+    alert("Failed to add post");
   }
 }
 
