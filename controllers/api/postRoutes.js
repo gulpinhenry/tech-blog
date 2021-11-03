@@ -26,7 +26,7 @@ router.get("/", async (req, res) => {
 });
 router.get("/:id", async (req, res) => {
     try{
-        const postData = Post.findOne({
+        const postData = await Post.findOne({
             where: {
                 id: req.params.id,
             },
@@ -45,10 +45,9 @@ router.get("/:id", async (req, res) => {
 router.post("/", async (req, res) => {
     try {
         const postData = await Post.create({
-            title: req.body.title,
-            content: req.body.content,
-            user_id: req.session.user_id,
+            ...req.body,
         })
+        console.log(req.body.user_id);
         res.status(200).json(postData);
     }
     catch (err) {
@@ -59,7 +58,6 @@ router.post("/", async (req, res) => {
 
 //take in post id
 router.put("/:id", async (req, res) => {
-
     try {
         const postData = await Post.update(
             {
@@ -76,14 +74,14 @@ router.put("/:id", async (req, res) => {
             res.status(404).json({ message: "No Post found with this id" });
             return;
         }
-        res.json(postData);
+        res.status(200).json(postData);
     } catch (err) {
         console.log(err);
         res.json(err);
     }
 });
 
-//TODO
+
 router.delete("/:id", async (req, res) => {
     try{
         const postData = Post.destroy({
@@ -95,7 +93,7 @@ router.delete("/:id", async (req, res) => {
             res.status(404).json({ message: "No Post found with this id" });
             return;
         }
-        res.json(postData);
+        res.status(200).json({message: "deleted successfully"});
     }
     catch(err){
         console.log(err);
