@@ -77,11 +77,11 @@ router.get("/post/:id", async (req, res) => {
 
 router.get("/login", (req, res) => {
   console.log("Is logged in?", req.session.loggedIn);
-  res.render("login", { loggedIn: req.session.loggedIn });
+  res.render("login", {loggedIn: req.session.loggedIn });
 });
 
 router.get("/post", (req, res) => {
-  res.render("create-post", { loggedIn: req.session.loggedIn });
+  res.render("create-post", {userid:req.session.user_id, loggedIn: req.session.loggedIn });
 });
 router.get("/edit/:id", (req, res) => {
   res.render("edit-post", {

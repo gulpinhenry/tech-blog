@@ -6,8 +6,9 @@
         <p id="post-body">{{curPost.content}}</p>
     </div>
     {{#if currentUser}}
-    <button id="edit-btn">Edit</button>
-    <button id="delete-btn">Delete</button>
+    <a href = "/edit/{{post_id}}" id="edit-btn"><button>Edit</button></a>
+    <a id="delete-btn">Delete</a>
+    <script src = "delete-post.js"></script>
     {{/if}}
 </div>
 
@@ -22,8 +23,5 @@
 {{#each curPost.comments as |comment|}}
 {{> comment comment}}
 {{/each}}
-{{!-- link single post js --}}
-{{#if currentUser}}
-<p>current user</p>
-{{!-- TODO link edit and delete js scripts --}}
-{{/if}}
+{{!-- link single post js with comment features--}}
+

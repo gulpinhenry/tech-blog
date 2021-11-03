@@ -1,5 +1,5 @@
 <div>
-    <form>
+    <form id="create-post-form">
         <h3>Create Post</h3>
         <div>
             <label for="title-input">Title</label>
@@ -10,8 +10,13 @@
             <input type="input" id="content-input" />
         </div>
         <div>
-            <button type="submit" id="create-btn">Create</button>
+            <button type="submit" value = "submit" id="create-btn">Create</button>
+        </div>
+        <div class="hidden">
+            <p class="logged-info">Username: <span id="username">{{username}}</span></p>
+            <p class="logged-info">Id: <span id="userid">{{userid}}</span></p>
         </div>
     </form>
+    <script src="js/create-post.js"></script>
     {{!-- TODO LINK JS --}}
 </div>
