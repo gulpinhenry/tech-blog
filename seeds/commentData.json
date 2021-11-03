@@ -1,16 +1,16 @@
 [
     {
-        "comment_text": "Test comment 1",
+        "comment_text": "You are a symbol of beauty.",
         "user_id": 1,
         "post_id": 1
     },
     {
-        "comment_text": "Test comment 2",
+        "comment_text": "I can tell when people are being judgmental just by looking at them.",
         "user_id": 1,
         "post_id": 2
     },
     {
-        "comment_text": "Test comment 3",
+        "comment_text": "Let beer be for those who are perishing, wine for those who are in anguish!",
         "user_id": 3,
         "post_id": 1
     }

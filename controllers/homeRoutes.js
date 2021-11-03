@@ -54,6 +54,7 @@ router.get("/post/:id", async (req, res) => {
               model: User,
               as: "user",
               attributes: ["username"],
+              curUserID: req.session.id
             },
           ],
         },
@@ -68,6 +69,7 @@ router.get("/post/:id", async (req, res) => {
     res.render("singlePost", {
       curPost,
       loggedIn: req.session.loggedIn,
+      curUserID: req.session.user_id,
       currentUser: owned,
     });
   } catch (err) {

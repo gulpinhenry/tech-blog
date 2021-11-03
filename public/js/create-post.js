@@ -1,4 +1,3 @@
-console.log("wb here");''
 async function handleForm(event) {
   event.preventDefault();
   const title = document.querySelector("#title-input").value;
