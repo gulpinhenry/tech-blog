@@ -15,13 +15,13 @@
   
 
 ## Description
-
+Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels! This program is a CMS style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. This app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
  <br />
 
 
 
-[Demo walkthrough video]()
+[Demo walkthrough]()
 
 
 
@@ -49,15 +49,16 @@
 
         npm start
 
-[Test deployed on Heroku as well](https://henrykam-ecommerce-back-end.herokuapp.com/api/)
+[Test deployed on Heroku as well]()
 
 <br>
 
 ## Built With
 
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  * [bcrypt](https://www.npmjs.com/package/bcrypt)
   * [dotenv](https://www.npmjs.com/package/dotenv)
-  * [Express.js](https://expressjs.com/)
+  * [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
   * [MySQL2](https://www.npmjs.com/package/mysql2)
   * [Node.js](https://nodejs.org/en/)
   * [nodemon](https://nodemon.io/)
