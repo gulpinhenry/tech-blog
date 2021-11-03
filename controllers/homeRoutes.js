@@ -82,7 +82,6 @@ router.get("/login", (req, res) => {
     res.render("login", { loggedIn: req.session.loggedIn });
 });
 
-router.get("/dashboard")
 
 router.get("/post", (req, res) => {
     res.render("create-post", { loggedIn: req.session.loggedIn });
