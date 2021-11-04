@@ -21,7 +21,7 @@ Writing about tech can be just as important as making it. Developers spend plent
 
 
 
-[Demo walkthrough]()
+[Demo walkthrough](./public/demo.gif)
 
 
 
@@ -49,7 +49,7 @@ Writing about tech can be just as important as making it. Developers spend plent
 
         npm start
 
-[Test deployed on Heroku as well]()
+[Test deployed on Heroku as well](https://techblog-henrykam.herokuapp.com/)
 
 <br>
 
